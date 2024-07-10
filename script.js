@@ -1,14 +1,14 @@
-function indexOfIgnoreCase(s1: string, s2: string): number {
+function indexOfIgnoreCase(str: string, subStr: string): number {
   
-  const lowers1 = s1.toLowerCase();
-  const lowers2 = s2.toLowerCase();
+  const lowerStr = str.toLowerCase();
+  const lowerSubStr = subStr.toLowerCase();
 
   
-  return lowers1.indexOf(lowers2);
+  return lowerStr.indexOf(lowerSubStr);
 }
 
 
-// Please do not change the code below
 const s1 = prompt("Enter s1:");
 const s2 = prompt("Enter s2:");
 alert(indexOfIgnoreCase(s1, s2));
+
